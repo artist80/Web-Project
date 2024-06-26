@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="CompcIT Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.britannica.com/" target="iframe">Britannica</a></li>
+                <li><a href="https://www.encyclopedia.com/" target="iframe">Encyclopedia</a></li>
+                <li><a href="https://www.wikipedia.org/" target="iframe">Wikipedia</a></li>
+                <li><a href="https://www.merriam-webster.com/" target="iframe">Merriam Webster</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <iframe name="iframe" src="" frameborder="0" style="width:100%; height:80vh;"></iframe>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 CompCit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
